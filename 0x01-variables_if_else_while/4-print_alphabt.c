@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
  * main - Entry point
@@ -10,17 +8,16 @@
 
 int main(void)
 {
-	char low, e, q;
+	char low = 'a';
 
-	e = 'e';
-	q = 'q';
-
-	for (low = 'a' low <= 'z'; low++)
+	while  (low <= 'z')
 	{
-		if (low != e && low != q)
+		if (low != 'q' && low != 'e')
+		{
 			putchar(low);
+		}
+		low++;
 	}
 	putchar('\n');
-
 	return (0);
 }
