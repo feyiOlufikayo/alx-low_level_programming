@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - print number from 00 - 99
+ * main - print number from 00 to 99
 (*
  * Return: 0 on success
  */
@@ -29,6 +29,8 @@ int main(void)
 			}
 			j++;
 		}
+		j + '0';
+		i++;
 	}
 	return (0);
 }
