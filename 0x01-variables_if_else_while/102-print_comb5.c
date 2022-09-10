@@ -10,7 +10,7 @@ int main(void)
 {
 	int h, j;
 
-	for (h = 0; h <= 99; h++)
+	for (h = 0; h <= 98; h++)
 	{
 		for (j = 0; j <= 99; j++)
 		{
@@ -19,11 +19,13 @@ int main(void)
 				putchar(' ');
 				putchar((j / 10) + '0');
 				putchar((j % 10) + '0');
-				if (h != 98 || j != 99)
-				{
+			
+				if (h == 98 && j == 99)
+					continue;
+			
 					putchar(',');
 					putchar(' ');
-				}
+			
 		}
 	}
 	putchar('\n');
