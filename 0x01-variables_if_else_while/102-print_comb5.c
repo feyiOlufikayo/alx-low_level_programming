@@ -8,24 +8,24 @@
 
 int main(void)
 {
-	int h, j;
+	int num1, num2;
 
-	for (h = 0; h <= 98; h++)
+	for (num1 = 0; num1 <= 98; num1++)
 	{
-		for (j = 0; j <= 99; j++)
+		for (num2 = 0; num2 <= 99; num2++)
 		{
-				putchar((h / 10) + '0');
-				putchar((h % 10) + '0');
+				putchar((num1 / 10) + '0');
+				putchar((num1 % 10) + '0');
 				putchar(' ');
-				putchar((j / 10) + '0');
-				putchar((j % 10) + '0');
-			
-				if (h == 98 && j == 99)
+				putchar((num2 / 10) + '0');
+				putchar((num2 % 10) + '0');
+
+				if (num1 == 98 && num2 == 99)
 					continue;
-			
+
 					putchar(',');
 					putchar(' ');
-			
+
 		}
 	}
 	putchar('\n');
