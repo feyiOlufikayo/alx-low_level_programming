@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  *  main - sums multiplies of 3 or 5
