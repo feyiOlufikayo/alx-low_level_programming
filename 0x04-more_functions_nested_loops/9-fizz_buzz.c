@@ -5,7 +5,7 @@
  * main - prints the numbers from 1 t0 100, followed by a new line
  * but for multiples of three prints Fizz instead of the number
  * and for the multiplies of five prints Buzz
- * Return: Always 0 (success)
+ * Return: Always o (success)
  */
 int main(void)
 {
@@ -30,7 +30,7 @@ int main(void)
 			printf(" %d", i);
 		}
 	}
-	printf("\n');
+	printf("\n");
 
 	return (0);
 }
