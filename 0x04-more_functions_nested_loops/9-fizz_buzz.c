@@ -5,7 +5,7 @@
  * main - prints the numbers from 1 t0 100, followed by a new line
  * but for multiples of three prints Fizz instead of the number
  * and for the multiplies of five prints Buzz
- * Return: Always o (success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
