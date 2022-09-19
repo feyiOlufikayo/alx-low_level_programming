@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-
 /**
  * main - prograe that generates random valid
  * passwords for the program 101-crackme
@@ -12,7 +11,6 @@
 
 int main(void)
 {
-
 	int i, sum, n;
 	int pass[100];
 
