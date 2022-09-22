@@ -1,2 +1,1 @@
-
-C basics
+More pointers, arrays and strings
