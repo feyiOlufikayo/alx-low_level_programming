@@ -1,5 +1,4 @@
 #include <stdio.h>
- /* main - Entry point */
 
 int main(void)
 {
@@ -12,6 +11,7 @@ int main(void)
 	/*
 	 * write your line of code here...
 	 * Remember:
+	 * main - Entry point
 	 * - you are not allowed to use a
 	 * - you are not allowed to modify p
 	 * - only one statement
