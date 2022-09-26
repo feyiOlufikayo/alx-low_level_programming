@@ -13,16 +13,20 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i;
+	int x = 0, y;
 
-	while (*s)
+	while (s[x] != '\0')
 	{
-		for (i = 0; accept[i]; i++)
+		for (y = 0; accept[y] != '\0' y++)
 		{
-			if (*s == accept[i])
+			if (s[x] == accept[y])
+			{
+				s = &s[x];
 				return (s);
+			}
 		}
-		s++
+		
+	x++;
 	}
 	return (NULL);
 }
