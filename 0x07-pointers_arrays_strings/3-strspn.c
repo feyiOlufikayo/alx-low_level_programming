@@ -22,10 +22,10 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 			if (accept[j + 1] == '\0' && s[i] != accept[j])
-			
+
 			return (matches); /*return if idx doesnt match*/
 		}
-		
+
 		i++;
 	}
 
