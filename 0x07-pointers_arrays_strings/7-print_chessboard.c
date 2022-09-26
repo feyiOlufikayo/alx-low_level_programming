@@ -12,7 +12,14 @@ void print_chessboard(char (*a)[8])
 	for (row = 0; row < 8; row++)
 	{
 		for (column = 0; column < 8; column++)
+		{
+		if (column == 7)
+		{
 			_putchar(a[row][column]);
 			_putchar('\n');
+		}
+		else
+			-putchar(a[row][column]);
+		}
 	}
 }
