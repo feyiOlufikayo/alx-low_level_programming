@@ -23,7 +23,7 @@ unsigned int _strspn(char *s, char *accept)
 			}
 			if (accept[j + 1] == '\0' && s[i] != accept[j])
 			
-			return (match); /*return if idx doesnt match*/
+			return (matches); /*return if idx doesnt match*/
 		}
 		
 		i++;
