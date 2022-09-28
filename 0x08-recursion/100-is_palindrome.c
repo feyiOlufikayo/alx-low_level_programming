@@ -6,7 +6,7 @@
  * @i: the incrementor, starts at 0
  * Return: 1 if it's a palindrome, 0 if it's not
  */
-int palindromechecker(char *str, int len, int i)
+int palindromeChecker(char *str, int len, int i)
 {
 	if (i < len && str[i] == str[len])
 		return (palindromeChecker(str, len - 1, i + 1));
@@ -36,5 +36,5 @@ int is_palindrome(char *s)
 	int i = 0;
 	int length = _strlen_recursion(s) - 1;
 
-	return (palindromCChecker(s, length, i));
+	return (palindromChecker(s, length, i));
 }
