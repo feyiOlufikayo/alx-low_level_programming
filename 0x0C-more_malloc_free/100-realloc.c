@@ -13,13 +13,13 @@ void *_realloc(void *ptr, unsigned int old_size, usingned int new_size)
 	char *clone, *relloc;
 	unsigned int i;
 
-	if (otr != NULL)
+	if (ptr != NULL)
 	{
 		clone = ptr;
 	}
 	else
 	{
-		return (mallow(new_size));
+		return (malloc(new_size));
 	}
 	if (new_size == old_size)
 	{
