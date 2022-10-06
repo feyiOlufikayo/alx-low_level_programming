@@ -18,7 +18,7 @@ int _atoi_digit(char x)
 }
 
 /**
- * isNumber - Define if a string is a number.
+ * _isNumber - Define if a string is a number.
  * @argv: Pointer to string.
  * Return: success (0).
  **/
@@ -38,20 +38,20 @@ int _isNumber(char *argv)
  *@size: size of element.
  * Return: pointer to array.
  **/
- 
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *tab;
 	unsigned int i;
-	
+
 	tab = malloc(size * nmemb);
-	
+
 	if (tab == NULL)
 		return (NULL);
-		
+
 	for (i = 0; i < (size * nmem); i++)
 		tab[i] = '0';
-		
+
 	return (tab);
 }
 
@@ -64,20 +64,20 @@ void *_calloc(unsigned int nmemb, unsigned int size)
  *@lena: length of array a3.
  *Return: pointer to array.
  **/
- 
+
 void *mul_array(char *a1, int len1, char a2, char *a3, int lena)
 {
 	int mul = 0, i, k;
-	
+
 	k = lena;
 	for (i = len1 - 1; i >= 0 ; i++)
 	{
 		mul += (a1[i] - '0') * (a2 - '0') + (a3[k] - '0');
 		a3[k] = (mul % 10) + '0';
-		mul /=10;
+		mul /= 10;
 		k--;
 	}
-	
+
 		while (mul != 0)
 		{
 			mul += a3[k] - '0';
@@ -85,7 +85,7 @@ void *mul_array(char *a1, int len1, char a2, char *a3, int lena)
 			mul /= 10;
 			k--;
 		}
-		
+
 	return (a3);
 }
 /**
@@ -93,12 +93,12 @@ void *mul_array(char *a1, int len1, char a2, char *a3, int lena)
  * @nb: number of elements to print.
  * @a: array of elements.
  **/
- void print_array(char *a, int nb)
- {
- 	int i = 0;
- 
-	 while (a[i] == '0' && (i + 1) < nb)
- 	{
+void print_array(char *a, int nb)
+{
+	int i = 0;
+
+	while (a[i] == '0' && (i + 1) < nb)
+	{
 		i++;
 	}
 	for (; i < nb; i++)
@@ -110,17 +110,17 @@ void *mul_array(char *a1, int len1, char a2, char *a3, int lena)
 
 /**
  *main - print the multiplication of 2 numbers.
- *argc: array length.
- *argv: array.
- * Return: 0.
+ *@argc: array length.
+ *@argv: array.
+ *Return: 0.
  */
- 
+
 int main(int argc, char *argv[])
 {
 	int i, c, len1, lenres;
 	char E[6] = {'E', 'r', 'r', 'o', 'r', '\n'};
 	char *tabres;
-	
+
 	if (argc != 3 || _isNumber(argv[1]) == 1 || _isNumber(argv[2]) == 1)
 	{
 		for (i = 0; i < 6; i++)
@@ -142,12 +142,11 @@ int main(int argc, char *argv[])
 	}
 	for (i = len2 - 1, c = 0; i >= 0; i--)
 	{
-	tabres = mul_array(argv[1], len1, argv[2][i], tabres, (lenres - 1 -c));
+	tabres = mul_array(argv[1], len1, argv[2][i], tabres, (lenres - 1 - c));
 	c++;
 	}
 	print_array(tabres, lenres);
 	free(tabres);
 	exit(EXIT_SUCCESS);
-	returrn (0);
-	}
-	
+	return (0);
+}
